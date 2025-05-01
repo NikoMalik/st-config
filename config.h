@@ -8,7 +8,7 @@
 // static char *font = "Liberation Mono:pixelsize=16";
 // static char *font = "Terminus:size=14";
 // static char *font = "Maple Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
-static char *font = "Liberation Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Iosevka Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
 
 
 #if FONT2_PATCH
@@ -220,39 +220,68 @@ char *xdndescchar = " !\"#$&'()*;<>?[\\]^`{|}~";
 //  	"#000000", /* 258 -> bg */
 //  	"#e5e5e5", /* 259 -> fg */
 //  };
-
-
-
-//vintage theme
+//lain theme
 static const char *colorname[] = {
-    /* 8 normal colors */
-    "#000000",   /* 0: black    - background, ui.background */
-    "#B80000",   /* 1: red      - errors, redish */
-    "#778e61",   /* 2: green    - variables, green */
-    "#E8AC65",   /* 3: yellow   - markup links, orange */
-    "#3876BF",   /* 4: blue     - types, blueish */
-    "#DE6468",   /* 5: magenta  - errors, bright-pink */
-    "#A5C4D4",   /* 6: cyan     - constants, constant */
-    "#e5e5e5",   /* 7: white    - main text, bright white */
+    /* 8 normal colors (regular0–regular7) */
+    "#000000",   /* 0: black       regular0 */
+    "#ff5774",   /* 1: red         regular1 */
+    "#6ae98a",   /* 2: green       regular2 */
+    "#ffe099",   /* 3: yellow      regular3 */
+    "#ff7a99",   /* 4: blue        regular4 */
+    "#e0b2a5",   /* 5: magenta     regular5 */
+    "#efdaa1",   /* 6: cyan        regular6 */
+    "#bfbfbf",   /* 7: white       regular7 */
 
-    /* 8 bright colors */
-    "#747575",   /* 8:  black   - line numbers, ui.linenr */
-    "#FFCB69",   /* 9:  red     - constants, bright-yellow */
-    "#4F6F52",   /* 10: green   - diff plus, bright-green */
-    "#D08C60",   /* 11: yellow  - functions, muddy */
-    "#7095bf",   /* 12: blue    - structures, namespace */
-    "#D9AE94",   /* 13: magenta - special, pink */
-    "#efbe4c",   /* 14: cyan    - types, type */
-    "#e5e5e5",   /* 15: white   - foreground, bright white */
+    /* 8 bright colors (bright0–bright7) */
+    "#4d4d4d",   /* 8:  bright black   bright0 */
+    "#ff6580",   /* 9:  bright red     bright1 */
+    "#70f893",   /* 10: bright green   bright2 */
+    "#ffe6ad",   /* 11: bright yellow  bright3 */
+    "#ff8ba6",   /* 12: bright blue    bright4 */
+    "#e8c4bb",   /* 13: bright magenta bright5 */
+    "#ffe8ac",   /* 14: bright cyan    bright6 */
+    "#e6e6e6",   /* 15: bright white   bright7 */
 
     [255] = 0,
 
-    /* additional colors */
-    "#3876BF",   /* 256 -> cursor, blueish */
-    "#5b5b5a",   /* 257 -> reverse cursor, ui.virtual.indent-guide */
-    "#000000",   /* 258 -> background, background */
-    "#e5e5e5",   /* 259 -> foreground, bright white */
+    /* semantic colors (256–259) */
+    "#ff7a99",   /* 256: cursor color        (blueish regular4) */
+    "#efdaa1",   /* 257: reverse cursor/bg    (cyan regular6) */
+    "#000000",   /* 258: background           (kitty background) */
+    "#bfbfbf",   /* 259: foreground           (kitty foreground) */
 };
+
+
+// //vintage theme
+// static const char *colorname[] = {
+//     /* 8 normal colors */
+//     "#000000",   /* 0: black    - background, ui.background */
+//     "#B80000",   /* 1: red      - errors, redish */
+//     "#778e61",   /* 2: green    - variables, green */
+//     "#E8AC65",   /* 3: yellow   - markup links, orange */
+//     "#3876BF",   /* 4: blue     - types, blueish */
+//     "#DE6468",   /* 5: magenta  - errors, bright-pink */
+//     "#A5C4D4",   /* 6: cyan     - constants, constant */
+//     "#e5e5e5",   /* 7: white    - main text, bright white */
+
+//     /* 8 bright colors */
+//     "#747575",   /* 8:  black   - line numbers, ui.linenr */
+//     "#FFCB69",   /* 9:  red     - constants, bright-yellow */
+//     "#4F6F52",   /* 10: green   - diff plus, bright-green */
+//     "#D08C60",   /* 11: yellow  - functions, muddy */
+//     "#7095bf",   /* 12: blue    - structures, namespace */
+//     "#D9AE94",   /* 13: magenta - special, pink */
+//     "#efbe4c",   /* 14: cyan    - types, type */
+//     "#e5e5e5",   /* 15: white   - foreground, bright white */
+
+//     [255] = 0,
+
+//     /* additional colors */
+//     "#3876BF",   /* 256 -> cursor, blueish */
+//     "#5b5b5a",   /* 257 -> reverse cursor, ui.virtual.indent-guide */
+//     "#000000",   /* 258 -> background, background */
+//     "#e5e5e5",   /* 259 -> foreground, bright white */
+// };
 //kanagawa
 // static const char *colorname[] = {
 //     /* 8 normal colors */
