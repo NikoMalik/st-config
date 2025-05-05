@@ -8,7 +8,9 @@
 // static char *font = "Liberation Mono:pixelsize=16";
 // static char *font = "Terminus:size=14";
 // static char *font = "Maple Mono:style=Regular:pixelsize=16:antialias=true:autohint=true";
+// static char *font = "Iosevka Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
 static char *font = "Iosevka Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
+
 
 
 #if FONT2_PATCH
@@ -171,10 +173,10 @@ unsigned int tabspaces = 8;
 
 #if ALPHA_PATCH
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.80;
 #if ALPHA_GRADIENT_PATCH
-float grad_alpha = 0.54; //alpha value that'll change
-float stat_alpha = 0.46; //constant alpha value that'll get added to grad_alpha
+float grad_alpha = 0.50; //alpha value that'll change
+float stat_alpha = 0.96; //constant alpha value that'll get added to grad_alpha
 #endif // ALPHA_GRADIENT_PATCH
 #if ALPHA_FOCUS_HIGHLIGHT_PATCH
 float alphaUnfocused = 0.6;
